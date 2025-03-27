@@ -104,13 +104,16 @@ def save_to_excel(data, filename="data.xlsx"):
         df = pd.DataFrame(data)
         
         # Read existing data
-        df_existing = pd.read_excel(filename)
+        df_existing = pd.read_excel(filename, engine='openpyxl')
 
         # Append new data
-        df_combined = df_existing.append(df, ignore_index=True)
+        df_combined = pd.concat([df_existing, df], ignore_index=True)
+        #df_combined = df_existing.append(df, ignore_index=True)
 
         # Save the combined data to Excel
         df_combined.to_excel(filename, index=False, engine="openpyxl")
+
+        print(f"✅ Results saved and appended to {filename}")
                 
     except Exception as e:
         print(f"❌ Error saving to Excel: {e}")

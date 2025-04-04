@@ -43,6 +43,6 @@ Feel free to reach out:
 - **Email**: justinegerard91@gmail.com  
 - **LinkedIn**: https://www.linkedin.com/in/justine-gerard-1139b4108/
 
-## 👨‍💻 Developers & Contributions  
+## 👨‍💻 Contributions  
 
 I'm always open to collaborating on exciting projects. If you have an idea, let's build something together!  
